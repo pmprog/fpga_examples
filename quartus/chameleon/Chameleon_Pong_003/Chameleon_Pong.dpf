@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pin_planner>
+	<pin_info>
+		<pin name="pll8_inclk0" direction="input" source="Assignment Group Member" xml_name="inclk0" xml_direction="input" xml_scope="external" xml_source="clock" >
+			<group name="pll8" port="inclk0" direction="input" />
+		</pin>
+		<pin name="pll8_c0" direction="output" source="Assignment Group Member" xml_name="c0" xml_direction="output" xml_scope="external" xml_source="clock" >
+			<group name="pll8" port="c0" direction="output" />
+		</pin>
+		<pin name="pll8_c1" direction="output" source="Assignment Group Member" xml_name="c1" xml_direction="output" xml_scope="external" xml_source="clock" >
+			<group name="pll8" port="c1" direction="output" />
+		</pin>
+		<pin name="pll8_c2" direction="output" source="Assignment Group Member" xml_name="c2" xml_direction="output" xml_scope="external" xml_source="clock" >
+			<group name="pll8" port="c2" direction="output" />
+		</pin>
+		<pin name="pll8_c3" direction="output" source="Assignment Group Member" xml_name="c3" xml_direction="output" xml_scope="external" xml_source="clock" >
+			<group name="pll8" port="c3" direction="output" />
+		</pin>
+		<pin name="pll8_locked" direction="output" source="Assignment Group Member" xml_name="locked" xml_direction="output" xml_scope="external" >
+			<group name="pll8" port="locked" direction="output" />
+		</pin>
+	</pin_info>
+	<buses>
+	</buses>
+	<group_file_association>
+		<group name="pll8" file_name="../chameleon_hack/quartus/chameleon_hack/pll8.ppf" variation_name="pll8" megafunction_name="ALTPLL" />
+	</group_file_association>
+	<pin_planner_file_specifies>
+		<file name="../chameleon_hack/quartus/chameleon_hack/pll8.ppf" specifies="all_ports" intended_family="Cyclone III" />
+	</pin_planner_file_specifies>
+</pin_planner>
