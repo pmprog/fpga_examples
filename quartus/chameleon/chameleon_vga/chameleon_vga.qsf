@@ -25,7 +25,7 @@
 # Notes:
 #
 # 1) The default values for assignments are stored in the file:
-#		ChameleonVGA_assignment_defaults.qdf
+#		chameleon_vga_assignment_defaults.qdf
 #    If this file doesn't exist, see file:
 #		assignment_defaults.qdf
 #
@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY ChameleonVGA
+set_global_assignment -name TOP_LEVEL_ENTITY chameleon_vga
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:39:40  OCTOBER 21, 2015"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.0
@@ -48,21 +48,8 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulati
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VHDL_FILE chameleon_vga.vhd
 set_global_assignment -name VHDL_FILE pll8.vhd
-set_global_assignment -name VHDL_FILE ChameleonVGA.vhd
-set_global_assignment -name VHDL_FILE ../../../rtl/chameleon/chameleon_c64_joykeyb.vhd
-set_global_assignment -name VHDL_FILE ../../../rtl/general/gen_reset.vhd
-set_global_assignment -name VHDL_FILE ../../../rtl/chameleon/chameleon_phi_clock_a.vhd
-set_global_assignment -name VHDL_FILE ../../../rtl/chameleon/chameleon_cdtv_remote.vhd
-set_global_assignment -name VHDL_FILE ../../../rtl/ps2/io_ps2_com.vhd
-set_global_assignment -name VHDL_FILE ../../../rtl/chameleon/chameleon_old_sdram.vhd
-set_global_assignment -name VHDL_FILE ../../../rtl/chameleon/chameleon_phi_clock_e.vhd
-set_global_assignment -name VHDL_FILE ../../../rtl/chameleon/chameleon_led.vhd
-set_global_assignment -name VHDL_FILE ../../../rtl/chameleon/chameleon_1khz.vhd
-set_global_assignment -name VHDL_FILE ../../../rtl/chameleon/chameleon_io.vhd
-set_global_assignment -name VHDL_FILE ../../../rtl/chameleon/chameleon_docking_station.vhd
-set_global_assignment -name VHDL_FILE ../../../rtl/chameleon/chameleon_1mhz.vhd
-set_global_assignment -name VHDL_FILE ../../../rtl/ps2/io_ps2_keyboard.vhd
 set_global_assignment -name VHDL_FILE ../../../rtl/video/video_vga_master.vhd
 set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
 set_global_assignment -name GENERATE_RBF_FILE ON
