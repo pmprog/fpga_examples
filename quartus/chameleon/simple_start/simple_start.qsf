@@ -18,14 +18,14 @@
 #
 # Quartus II 64-Bit
 # Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-# Date created = 18:39:40  October 21, 2015
+# Date created = 07:28:05  March 07, 2016
 #
 # -------------------------------------------------------------------------- #
 #
 # Notes:
 #
 # 1) The default values for assignments are stored in the file:
-#		chameleon_vga_assignment_defaults.qdf
+#		simple_start_assignment_defaults.qdf
 #    If this file doesn't exist, see file:
 #		assignment_defaults.qdf
 #
@@ -38,9 +38,9 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY chameleon_vga
+set_global_assignment -name TOP_LEVEL_ENTITY simple_start
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.0
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:39:40  OCTOBER 21, 2015"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "07:28:05  MARCH 07, 2016"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.0
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
@@ -48,15 +48,8 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulati
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VHDL_FILE chameleon_vga.vhd
+set_global_assignment -name VHDL_FILE ../../../rtl/chameleon/chameleon_1khz.vhd
+set_global_assignment -name VHDL_FILE ../../../rtl/general/gen_button.vhd
 set_global_assignment -name VHDL_FILE pll8.vhd
-set_global_assignment -name VHDL_FILE ../../../rtl/video/video_vga_master.vhd
-set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
-set_global_assignment -name GENERATE_RBF_FILE ON
-set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
-set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
-set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
-set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
-set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
-set_global_assignment -name BDF_FILE Block1.bdf
+set_global_assignment -name BDF_FILE simple_start.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
