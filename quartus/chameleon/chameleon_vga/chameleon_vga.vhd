@@ -56,7 +56,6 @@ entity chameleon_vga is
 		blu : out unsigned(4 downto 0);
 		nHSync : out std_logic;
 		nVSync : out std_logic;
-		vga_id : out unsigned(3 downto 0);
 
 -- Audio
 		sigmaL : out std_logic;

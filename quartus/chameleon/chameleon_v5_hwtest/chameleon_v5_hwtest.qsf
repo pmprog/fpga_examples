@@ -41,7 +41,7 @@ set_global_assignment -name DEVICE EP3C25E144C8
 set_global_assignment -name TOP_LEVEL_ENTITY chameleon_v5_hwtest_top
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.0 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "02:03:07  OCTOBER 08, 2009"
-set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+set_global_assignment -name LAST_QUARTUS_VERSION 13.0
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
 set_global_assignment -name CYCLONEII_OPTIMIZATION_TECHNIQUE SPEED
 set_global_assignment -name DEVICE_FILTER_PIN_COUNT 144
@@ -125,7 +125,6 @@ set_global_assignment -name FORCE_CONFIGURATION_VCCIO ON
 set_global_assignment -name RESERVE_DATA1_AFTER_CONFIGURATION "USE AS REGULAR IO"
 set_global_assignment -name RESERVE_FLASH_NCE_AFTER_CONFIGURATION "USE AS REGULAR IO"
 set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
-set_global_assignment -name MISC_FILE "D:/dev/fpga64/quartus/chameleon_v5_hwtest/chameleon_v5_hwtest.dpf"
 set_global_assignment -name GENERATE_RBF_FILE ON
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
 set_location_assignment PIN_86 -to sigmaL
@@ -245,7 +244,6 @@ set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to sd_ldqm
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to sd_udqm
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to sd_addr[*]
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to sd_data[*]
-set_global_assignment -name MISC_FILE "d:/dev/fpga64/quartus/chameleon_v5_hwtest/chameleon_v5_hwtest.dpf"
 set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC ON
 set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION ON
 set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_RETIMING ON
