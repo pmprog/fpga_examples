@@ -142,7 +142,7 @@ begin
 		if rising_edge(sysclk) then
 			if end_of_pixel = '1' then
 				red <= (others => '0');
-				grn <= (others => '0');
+				grn <= (others => '1');
 				blu <= (others => '0');
 				if currentY < 256 then
 					case currentX(11 downto 7) is
