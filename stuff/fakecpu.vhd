@@ -5,6 +5,10 @@ use IEEE.numeric_std.ALL;
 entity fakecpu is
 	port (
 		clk : in std_logic;
+		
+		gpu_bus_req : in std_logic;
+		gpu_bus_ack : out std_logic;
+		
 		ram_data : inout unsigned(15 downto 0);
 		ram_address : out unsigned(15 downto 0);
 		ram_write_en : out std_logic

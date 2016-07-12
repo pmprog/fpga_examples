@@ -6,7 +6,8 @@ entity fakegpu is
 	port (
 		clk : in std_logic;
 		
-		ctl_bus : 
+		bus_req : out std_logic;
+		bus_ack : in std_logic;
 		
 		ram_data : in unsigned(15 downto 0);
 		ram_address : out unsigned(15 downto 0);
